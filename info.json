@@ -1,0 +1,9 @@
+{
+  "name": "hatsune-enrichment-process",
+  "version": "0.1.0",
+  "title": "Hatsune Enrichment Process",
+  "author": "sylae",
+  "factorio_version": "1.1",
+  "dependencies": ["base >= 1.1.0"],
+  "description": "Replaces the Kovarex process with the Hatsune process"
+}
