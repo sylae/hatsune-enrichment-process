@@ -25,6 +25,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           UPDATE_EXISTING: "true"
           VERSION_REGEX: ^v[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+
+          INPUT_MOD_BASE_DIR: ${{ env.GITHUB_WORKSPACE }}
       - name: Upload GitHub artifacts
         uses: Roang-zero1/github-upload-release-artifacts-action@master
         env:
