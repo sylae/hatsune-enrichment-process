@@ -19,13 +19,14 @@ jobs:
     steps:
       - name: Create Factorio mod package
         uses: Roang-zero1/factorio-mod-package@master
+        env:
+          INPUT_MOD_BASE_DIR: ${{ env.GITHUB_WORKSPACE }}
       - name: Create GitHub release
         uses: Roang-zero1/github-create-release-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           UPDATE_EXISTING: "true"
           VERSION_REGEX: ^v[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+
-          INPUT_MOD_BASE_DIR: ${{ env.GITHUB_WORKSPACE }}
       - name: Upload GitHub artifacts
         uses: Roang-zero1/github-upload-release-artifacts-action@master
         env:
