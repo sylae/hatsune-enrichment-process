@@ -21,6 +21,8 @@ jobs:
         uses: Roang-zero1/factorio-mod-package@master
         with:
           mod_base_dir: ${{ env.GITHUB_WORKSPACE }}
+        env:
+          INPUT_MOD_BASE_DIR: ${{ env.GITHUB_WORKSPACE }}
       - name: Create GitHub release
         uses: Roang-zero1/github-create-release-action@master
         env:
