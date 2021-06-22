@@ -1,4 +1,4 @@
-# matsune-enrichment-process
+# hatsune-enrichment-process
 
 Replaces the Kovarex enrichment process with the far-superior Hatsune enrichment process. This mod makes no other changes.
 
